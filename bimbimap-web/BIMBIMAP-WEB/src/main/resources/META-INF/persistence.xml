@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_BIMBIMAP-WEB_war_1PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.Bancos</class>
+    <class>com.modelo.Cuenta.CuentaCliente</class>
+    <class>com.modelo.Cuenta.CuentaEmpleados</class>
+    <class>com.modelo.Cuenta.CuentaGerente</class>
+    <class>com.modelo.Menu.Platillo</class>
+    <class>com.modelo.Menu.PagosTarjeta</class>
+    <class>com.modelo.Pagos.Pago</class>
+    <class>com.modelo.Pedidos.Pedido</class>
+    <class>com.modelo.Cuenta.Direccion</class>
+    <class>com.modelo.Pagos.FormaPago</class>
+    <class>com.modelo.Pedidos.Mesa</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql5.freesqldatabase.com:3306/sql5471049?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="sql5471049"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="U2WJlPntpW"/>
+    </properties>
+  </persistence-unit>
+</persistence>
